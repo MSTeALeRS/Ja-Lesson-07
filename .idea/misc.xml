@@ -3,6 +3,7 @@
   <component name="ExternalStorageConfigurationManager" enabled="true" />
   <component name="FrameworkDetectionExcludesConfiguration">
     <file type="web" url="file://$USER_HOME$/Downloads/JA-Lesson-4-master" />
+    <file type="web" url="file://$PROJECT_DIR$" />
     <type id="javaeeApplication" />
   </component>
   <component name="MavenProjectsManager">

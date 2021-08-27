@@ -8,6 +8,6 @@ public class main {
 
         BasicConfigurator.configure();
          UserService userService = UserServiceImpl.getUserService();
-        userService.create(new User("HP34@gmail.com","TOm", "Marvolo", "Redl", "345" ));
+        userService.create(new User("HP34@gmail.com","TOm", "Marvolo", "Redl", "3345" ));
     }
 }

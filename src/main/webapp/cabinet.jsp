@@ -17,7 +17,7 @@
 <body>
 <jsp:include page="header.jsp"></jsp:include>
 
-<h1 style="text-align: center">Welcome to the cabinet  ${userEmail}  </h1>
+<h1 style="text-align: center">Welcome to the cabinet  ${email}  </h1>
 
 <jsp:include page="footer.jsp"></jsp:include>
 </body>

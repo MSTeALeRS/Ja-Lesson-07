@@ -7,11 +7,11 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="Maven+Web" />
-        <module name="Ja-Lesson-3" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="JA-lesson-04" target="1.8" />
+      <module name="Ja-Lesson-3" target="1.8" />
       <module name="webapp" target="1.8" />
     </bytecodeTargetLevel>
   </component>
