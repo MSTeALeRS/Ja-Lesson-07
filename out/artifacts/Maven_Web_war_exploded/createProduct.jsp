@@ -21,12 +21,31 @@
 <body>
 
 <jsp:include page="header.jsp"></jsp:include>
-<h1 style="text-align: center">Welcome to the cabinet  ${User.name}  </h1>
 
-<div class="container-fluid">
-    <div class="row" >
-        <div id="productCards" style="height: 500px;width: 100%;display:flex; flex-direction: row; flex-wrap: wrap; justify-content: left"></div>
+<div class="container-fluid" style="margin: auto; display: block; width: 200px">
+    <div class="row">
+
+        <form class="createProduct">
+            <div class="form-group">
+                <input type="text" class="form-control productName"
+                       placeholder="enter product name">
+            </div>
+
+            <div class="form-group">
+                <input type="text" class="form-control productDescription"
+                       placeholder="enter product description">
+            </div>
+
+            <div class="form-group">
+                <input type="number" class="form-control productPrice"
+                       placeholder="enter product price">
+            </div>
+
+            <button class="btn btn-primary createProduct">Submit</button>
+        </form>
+
     </div>
+
 </div>
 
 
@@ -47,6 +66,6 @@
 <script
         src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <script src="js/header.js"></script>
-<script src="js/cabinet.js"></script>
+<script src="js/ServerCalls.js"></script>
 </body>
 </html>

@@ -12,10 +12,10 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 @WebServlet("/product")
-//        (name = "ProductController", value = "/ProductController")
 public class ProductController extends HttpServlet {
 
-    private ProductService productService = ProductServiceImpl.getProductService();
+    ProductService productService = ProductServiceImpl.getProductService();
+
     // to create resource (product)
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -41,7 +41,12 @@ public class ProductController extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
+        String productId = request.getParameter("id");
 
+        Product product = productService.read(Integer.parseInt(productId));
+
+        request.setAttribute("product", product);
+        request.getRequestDispatcher("singleProduct.jsp").forward(request, response);
     }
 
     // to update resource (product)

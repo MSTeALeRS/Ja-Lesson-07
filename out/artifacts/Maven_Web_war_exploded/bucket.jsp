@@ -21,12 +21,15 @@
 <body>
 
 <jsp:include page="header.jsp"></jsp:include>
-<h1 style="text-align: center">Welcome to the cabinet  ${User.name}  </h1>
+
 
 <div class="container-fluid">
-    <div class="row" >
-        <div id="productCards" style="height: 500px;width: 100%;display:flex; flex-direction: row; flex-wrap: wrap; justify-content: left"></div>
+    <div class="row">
+
+        <h1>Bucket of Product</h1>
+
     </div>
+
 </div>
 
 
@@ -47,6 +50,5 @@
 <script
         src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <script src="js/header.js"></script>
-<script src="js/cabinet.js"></script>
 </body>
 </html>
