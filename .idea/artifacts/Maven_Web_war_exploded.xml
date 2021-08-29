@@ -11,7 +11,8 @@
           <element id="library" level="project" name="Maven: jstl:jstl:1.2" />
           <element id="library" level="project" name="Maven: taglibs:standard:1.1.2" />
           <element id="library" level="project" name="Maven: org.jetbrains:annotations:22.0.0" />
-          <element id="library" level="project" name="MyLib" />
+          <element id="library" level="project" name="Maven: com.google.code.gson:gson:2.8.6" />
+          <element id="library" level="application" name="MyLib" />
         </element>
       </element>
       <element id="javaee-facet-resources" facet="Maven+Web/web/Web" />

@@ -64,10 +64,17 @@ $("button.login").click(function() {
             password : password
         };
 
-        $.post("login", userLogin, function () {
+        $.post("login", userLogin, function (data) {
+            var customUrl = '';
+            var urlContent = window.location.href.split('/');
+            for (var i = 0; i < urlContent.length - 1; i++) {
+                customUrl += urlContent[i] + '/'
+            }
+            if (data.destinationUrl != undefined) {
+                customUrl += data.destinationUrl;
+            }
 
-                window.location.href= "cabinet.jsp";
+            window.location = customUrl;
         });
-
     }
 });
